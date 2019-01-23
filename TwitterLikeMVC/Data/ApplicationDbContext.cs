@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace TwitterLikeMVC.Data
+namespace TwitterLikeMVC.Models
 {
 	public class ApplicationDbContext : IdentityDbContext
 	{
@@ -12,5 +9,7 @@ namespace TwitterLikeMVC.Data
 			: base(options)
 		{
 		}
+
+		public DbSet<Posts> Posts { get; set; }
 	}
 }

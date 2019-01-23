@@ -13,6 +13,8 @@ using Microsoft.EntityFrameworkCore;
 using TwitterLikeMVC.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using TwitterLikeMVC.Models;
+using TwitterLikeMVC.Services;
 
 namespace TwitterLikeMVC
 {
@@ -41,6 +43,8 @@ namespace TwitterLikeMVC
 			services.AddDefaultIdentity<IdentityUser>()
 				.AddDefaultUI(UIFramework.Bootstrap4)
 				.AddEntityFrameworkStores<ApplicationDbContext>();
+
+			services.AddScoped<PostsService>();
 
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 		}
