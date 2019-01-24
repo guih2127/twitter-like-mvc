@@ -1,12 +1,12 @@
 ﻿@model TwitterLikeMVC.Models.Posts
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Post";
 }
 
-<h1>Create</h1>
+<h1>What are you feeling now?</h1>
 
-<h4>Posts</h4>
+<h4>Tell us</h4>
 <hr />
 <div class="row">
     <div class="col-md-6">
@@ -25,6 +25,6 @@
 </div>
 
 <div>
-    <a asp-action="UserPosts" asp-route-email="@User.Identity.Name">Back to List</a>
+    <a asp-action="UserPosts" asp-route-email="@User.Identity.Name">Back to my posts</a>
 </div>
 

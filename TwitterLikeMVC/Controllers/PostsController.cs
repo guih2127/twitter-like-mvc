@@ -1,9 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Security.Claims;
 using TwitterLikeMVC.Services;
 using TwitterLikeMVC.Models;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authorization;
 
 namespace TwitterLikeMVC.Controllers
