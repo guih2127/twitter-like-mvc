@@ -4,7 +4,8 @@ namespace TwitterLikeMVC.Models
 {
 	public class UserFriends
 	{
+		public int Id { get; set; }
 		public string UserEmail { get; set; }
-		public List<string> Friends { get; set; }
+		public string Friend { get; set; }
 	}
 }

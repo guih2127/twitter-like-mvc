@@ -21,7 +21,7 @@ namespace TwitterLikeMVC.Controllers
 		{
 			UserFriends userFriends = new UserFriends { };
 			userFriends.UserEmail = User.Identity.Name;
-			userFriends.Friends.Add(friendEmail);
+			userFriends.Friend = friendEmail;
 
 			return RedirectToAction("UserFriends", new { email = userFriends.UserEmail });
 		}
