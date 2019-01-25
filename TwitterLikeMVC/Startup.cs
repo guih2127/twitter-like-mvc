@@ -45,6 +45,7 @@ namespace TwitterLikeMVC
 				.AddEntityFrameworkStores<ApplicationDbContext>();
 
 			services.AddScoped<PostsService>();
+			services.AddScoped<UserFriendsService>();
 
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 		}

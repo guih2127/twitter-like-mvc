@@ -25,5 +25,11 @@ namespace TwitterLikeMVC.Controllers
 
 			return RedirectToAction("UserFriends", new { email = userFriends.UserEmail });
 		}
+
+		public IActionResult FriendList(string userEmail)
+		{
+			var friendList = _userFriendsService.AllUserFriends(userEmail);
+			return View(friendList);
+		}
     }
 }
